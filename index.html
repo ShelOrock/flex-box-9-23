@@ -1,61 +1,78 @@
 <html>
-    <head>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <h1>Acme Layout</h1>
+      <div class="nav-links">
+        <a href="#">Users</a>
+        <a href="#">Departments</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
 
-    </head>
-    <body>
-        <div id='navbar'>
-            <h1>Acme Layout</h1>
-            <a href='#'>Users</a>
-            <a href='#'>Departments</a>
-            <a href='#'>Contact</a>
+    <div id="main-container">
+      <h2>Users</h2>
+
+      <div class="create-user">
+        <h2>Create A User</h2>
+        <form>
+          <div>
+            <h3>First Name</h3>
+            <input class="form-input" type="text" placeholder="Jane" />
+          </div>
+          <div>
+            <h3>Last Name</h3>
+            <input class="form-input" type="text" placeholder="Doe" />
+          </div>
+          <div>
+            <h3>Department</h3>
+            <select name="department-list">
+              <option value="None">-- None --</option>
+            </select>
+          </div>
+          <div class="buttons">
+            <button>Clear</button>
+            <button>Save</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="user-card-container">
+        <div class="card-container">
+          <h4>User A</h4>
+          <p>Some text for the user.</p>
         </div>
-        <div id='main-container'>
-            <h2>Users</h2>
-            <div class='create-user'>
-                <h2>Create A User</h2>
-                <form>
-                    <h3>First Name</h3>
-                    <input type='text' placeholder="Jane"/>
-                    <h3>Last Name</h3>
-                    <input type='text' placeholder='Doe'/>
-                    <h3>Department</h3>
-                    <select name='department-list'>
-                        <option value='None'>None</option>
-                    </select>
-                    <button>Clear</button>
-                    <button>Save</button>
-                </form>
-            </div>
-            <div class='user-card-container'>
-                <div class='card-container'>
-                    <h4>User A</h4>
-                    <p>Some text for the user.</p>
-                </div>
-                <div class='card-container'>
-                    <h4>User A</h4>
-                    <p>Some text for the user. Some text for the user. Some text for the user. Some text for the user. Some text for the user. Some text for the user.</p>
-                </div>
-                <div class='card-container'>
-                    <h4>User A</h4>
-                    <p>Some text for the user.</p>
-                </div>
-                <div class='card-container'>
-                    <h4>User A</h4>
-                    <p>Some text for the user.</p>
-                </div>
-                <div class='card-container'>
-                    <h4>User A</h4>
-                    <p>Some text for the user.</p>
-                </div>
-                <div class='card-container'>
-                    <h4>User A</h4>
-                    <p>Some text for the user.</p>
-                </div>
-                <div class='card-container'>
-                    <h4>User A</h4>
-                    <p>Some text for the user.</p>
-                </div>
-            </div>
+        <div class="card-container">
+          <h4>User A</h4>
+          <p>
+            Some text for the user. Some text for the user. Some text for the
+            user. Some text for the user. Some text for the user. Some text for
+            the user.
+          </p>
         </div>
-    </body>
+        <div class="card-container">
+          <h4>User A</h4>
+          <p>Some text for the user.</p>
+        </div>
+        <div class="card-container">
+          <h4>User A</h4>
+          <p>Some text for the user.</p>
+        </div>
+        <div class="card-container">
+          <h4>User A</h4>
+          <p>Some text for the user.</p>
+        </div>
+        <div class="card-container">
+          <h4>User A</h4>
+          <p>Some text for the user.</p>
+        </div>
+        <div class="card-container">
+          <h4>User A</h4>
+          <p>Some text for the user.</p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
