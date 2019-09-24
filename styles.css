@@ -77,5 +77,64 @@ select {
 
 button{
     width: 50px;
-    border-radius: 
+}
+
+@media(max-width: 600px) {
+    #navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        font-size: 1.25rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    a {
+        padding: 1rem;
+    }
+
+    .create-user{
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    form > div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    form > div > .form-input {
+        width: 100%;
+    }
+
+    select {
+        width: 100%;
+      }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    button {
+        width: 90%;
+        padding: .4rem;
+    }
+
+    .user-card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .card-container {
+        width: 90%;
+        border-radius: 15px;
+    }
+
 }
